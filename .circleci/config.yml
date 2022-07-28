@@ -31,7 +31,7 @@ jobs:
             docker tag udagram-reverseproxy frank6496/udagram-reverseproxy:v3
             echo "-------- All images succesfully built----------"
             echo " ------- login in to hub--------"
-            docker login -u frank6496 -p $DOCKER_PASS
+            docker login -u frank6496 -p $DOCKERPASS
             echo "-------------- Pushing images to dockerhub-------"
             docker push frank6496/udagram-api-feed:v3
             docker push frank6496/udagram-api-user:v3
